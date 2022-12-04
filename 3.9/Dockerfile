@@ -1,4 +1,4 @@
-FROM lambci/lambda:build-python3.9
+FROM amazon/aws-lambda-python:3.9
 
 RUN pip install -t /opt/python/ psycopg2-binary
 

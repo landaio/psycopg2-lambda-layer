@@ -3,12 +3,10 @@ service: psycopg2-lambda-layer
 provider:
   name: aws
   runtime: python3.9
-  region: eu-central-1
-  profile: jb
-  stage: prod
+  region: us-east-1
 
 layers:
-  psycopg2-py38:
+  psycopg2-py39:
     description: "psycopg2 python postgresql client library."
     buildScript: ./build.sh
     path: layer
